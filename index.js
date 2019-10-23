@@ -240,7 +240,7 @@ class App extends Component {
 
         { '専門科目': 0, '専門基礎科目': 0, '基礎科目': 0, '合計': 0 },
 
-        { '必修科目': 0, '選択科目': 0, '自由科目': 0, '合計': 0 },
+        { '必修科目': 33, '選択科目': 46, '自由科目': 45, '合計': 124 },
 
         { '必修科目': 33, '選択科目': 48, '自由科目': 45, '合計': 126 }],
 
@@ -329,6 +329,15 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+      {(this.state.Youken).map((e)=>(
+        <React.Fragment>
+         <div>{e.必修科目}</div>
+         <div>{e.選択科目}</div>
+         <div>{e.自由科目}</div>
+         <div>{e.合計}</div>
+       </React.Fragment>
+
+      ))}
       {(Object.keys(this.state.Youken[33])).map((e)=>(
       <React.Fragment>
       <h1>{e}</h1>
