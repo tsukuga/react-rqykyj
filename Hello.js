@@ -5,7 +5,7 @@ export default ({ name }) => <h1>Hello {name}!</h1>;
  render() {
     return (
       <React.Fragment>
-      {(Object.keys(this.state.Youken[33])).map((e)=>(
+      {(Object.keys(this.state.Youken[1])).map((e)=>(
       <React.Fragment>
       <div>{e}</div>
       <div>
