@@ -339,8 +339,23 @@ class App extends Component {
         <h2>{t}</h2>
        
       {this.state.Youken.map((r)=>(
-        e==r.category1 && t==r.category3 && <div> {r.group}</div>
+       <React.Fragment>
+
+          {e==r.category1 && t==r.category3 && <h3>{r.group}</h3>}
+
+          {this.state.Result.map((p)=>(
+          
+           e==r.category1 && t==r.category3 && e==p.category1 && t==p.category3 && r.group==p.about && <div> {p.科目名}</div>
+      
+           ))}
+
+      </React.Fragment>
+         
         ))}
+     
+
+        
+      
         
       </React.Fragment>
       ))}
