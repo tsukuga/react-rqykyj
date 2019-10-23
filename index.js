@@ -339,12 +339,9 @@ class App extends Component {
         <h2>{t}</h2>
        
       {this.state.Youken.map((r)=>(
-
-        
         e==r.category1 && t==r.category3 && <div> {r.group}</div>
-    
-      
-       ))}
+        ))}
+        
       </React.Fragment>
       ))}
      
